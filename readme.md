@@ -1,12 +1,12 @@
-﻿# Credit Card Brand Detector / Detector de Bandeiras de CartÃ£o
+# Credit Card Brand Detector / Detector de Bandeiras de Cart├úo
 
 <img alt="Harness Score L0" src="https://paladini.github.io/harness-score/maturity/badge-l0.svg" height="20">
-ðŸ‡ºðŸ‡¸ **English**: Detects credit card brand/network based on card number patterns  
-ðŸ‡§ðŸ‡· **PortuguÃªs**: Detecta a bandeira/marca de cartÃµes de crÃ©dito baseado no padrÃ£o do nÃºmero
+­ƒç║­ƒç© **English**: Detects credit card brand/network based on card number patterns  
+­ƒçº­ƒçÀ **Portugu├¬s**: Detecta a bandeira/marca de cart├Áes de cr├®dito baseado no padr├úo do n├║mero
 
 ## Supported Brands / Bandeiras Suportadas
 
-âœ… **11 brands supported / 11 bandeiras suportadas:**
+Ô£à **11 brands supported / 11 bandeiras suportadas:**
 
 - Visa
 - Mastercard  
@@ -20,7 +20,7 @@
 - Aura
 - Elo
 
-## Installation / InstalaÃ§Ã£o
+## Installation / Instala├º├úo
 
 ```bash
 npm install credit-card-brand-detector
@@ -42,46 +42,46 @@ const brand = detectBrand('5555555555554444');
 console.log(brand); // Output: 'Mastercard'
 ```
 
-### PortuguÃªs
+### Portugu├¬s
 ```javascript
 const { validateCreditCard, detectBrand } = require('credit-card-brand-detector');
 
 // Detectar bandeira e validar
 const resultado = validateCreditCard('4532015112830366');
 console.log(resultado);
-// SaÃ­da: { isValid: true, bandeira: 'Visa' }
+// Sa├¡da: { isValid: true, bandeira: 'Visa' }
 
 // Apenas detectar a bandeira
 const bandeira = detectBrand('5555555555554444');
-console.log(bandeira); // SaÃ­da: 'Mastercard'
+console.log(bandeira); // Sa├¡da: 'Mastercard'
 ```
 
-## API Reference / ReferÃªncia da API
+## API Reference / Refer├¬ncia da API
 
 ### `validateCreditCard(cardNumber)`
 **English**: Validates a credit card number and detects its brand  
-**PortuguÃªs**: Valida um nÃºmero de cartÃ£o de crÃ©dito e detecta sua bandeira
+**Portugu├¬s**: Valida um n├║mero de cart├úo de cr├®dito e detecta sua bandeira
 
-**Parameters / ParÃ¢metros:**
-- `cardNumber` (string): Credit card number / NÃºmero do cartÃ£o de crÃ©dito
+**Parameters / Par├ómetros:**
+- `cardNumber` (string): Credit card number / N├║mero do cart├úo de cr├®dito
 
 **Returns / Retorna:**
 ```javascript
 {
-  isValid: boolean,    // Luhn validation result / Resultado da validaÃ§Ã£o Luhn
+  isValid: boolean,    // Luhn validation result / Resultado da valida├º├úo Luhn
   bandeira: string|null // Brand name or null / Nome da bandeira ou null
 }
 ```
 
 ### `detectBrand(cardNumber)`
 **English**: Detects only the credit card brand  
-**PortuguÃªs**: Detecta apenas a bandeira do cartÃ£o de crÃ©dito
+**Portugu├¬s**: Detecta apenas a bandeira do cart├úo de cr├®dito
 
-**Parameters / ParÃ¢metros:**
-- `cardNumber` (string): Credit card number / NÃºmero do cartÃ£o de crÃ©dito
+**Parameters / Par├ómetros:**
+- `cardNumber` (string): Credit card number / N├║mero do cart├úo de cr├®dito
 
 **Returns / Retorna:**
-- `string|null`: Brand name or null if not recognized / Nome da bandeira ou null se nÃ£o reconhecida
+- `string|null`: Brand name or null if not recognized / Nome da bandeira ou null se n├úo reconhecida
 
 ## Examples / Exemplos
 
@@ -99,27 +99,27 @@ console.log(detectBrand('6062000000000001')); // 'Hipercard'
 console.log(detectBrand('4869330000000001')); // 'Aura'
 ```
 
-## Features / CaracterÃ­sticas
+## Features / Caracter├¡sticas
 
-ðŸ‡ºðŸ‡¸ **English:**
-- âœ… Detects 11 major credit card brands
-- âœ… Includes Brazilian brands (Hipercard, Aura, Elo)
-- âœ… Luhn algorithm validation
-- âœ… Handles spaces and hyphens in card numbers
-- âœ… Zero dependencies
-- âœ… Comprehensive unit tests
+­ƒç║­ƒç© **English:**
+- Ô£à Detects 11 major credit card brands
+- Ô£à Includes Brazilian brands (Hipercard, Aura, Elo)
+- Ô£à Luhn algorithm validation
+- Ô£à Handles spaces and hyphens in card numbers
+- Ô£à Zero dependencies
+- Ô£à Comprehensive unit tests
 
-ðŸ‡§ðŸ‡· **PortuguÃªs:**
-- âœ… Detecta 11 principais bandeiras de cartÃ£o
-- âœ… Inclui bandeiras brasileiras (Hipercard, Aura, Elo)
-- âœ… ValidaÃ§Ã£o por algoritmo de Luhn
-- âœ… Remove espaÃ§os e hÃ­fens dos nÃºmeros
-- âœ… Zero dependÃªncias
-- âœ… Testes unitÃ¡rios abrangentes
+­ƒçº­ƒçÀ **Portugu├¬s:**
+- Ô£à Detecta 11 principais bandeiras de cart├úo
+- Ô£à Inclui bandeiras brasileiras (Hipercard, Aura, Elo)
+- Ô£à Valida├º├úo por algoritmo de Luhn
+- Ô£à Remove espa├ºos e h├¡fens dos n├║meros
+- Ô£à Zero depend├¬ncias
+- Ô£à Testes unit├írios abrangentes
 
-## License / LicenÃ§a
+## License / Licen├ºa
 
-MIT License - see LICENSE file / LicenÃ§a MIT - veja o arquivo LICENSE
+MIT License - see LICENSE file / Licen├ºa MIT - veja o arquivo LICENSE
 
 ## About
 
